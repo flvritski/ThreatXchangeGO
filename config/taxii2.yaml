@@ -1,0 +1,21 @@
+taxii2:
+  title: "Some TAXII Server"
+  description: "This TAXII Server contains a listing of..."
+  contact:     "florin.stefan@domain.com"
+  default:     "http://example.com/api2/"
+  api_roots:
+    - url: http://example.com/api1
+      title: "Example API 1"
+      description: An example of API 1
+      version: v1
+      max_content_length: 104857600
+    - url: http://example.com/api2
+      title: "Example API 2"
+      description: "An example API 2"
+      version: v2
+      max_content_length: 104857600
+    - url: http://example.com/trustgroup1
+      title: "Malware Research Group"
+      description: "A trust group setup for malware researchers"
+      version: application/taxii+json;version=2.1
+      max_content_length: 104857600

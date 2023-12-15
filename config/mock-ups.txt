@@ -1,0 +1,58 @@
+collectionInfo := models.Collection{
+		ID:          "91a7b528-80eb-42ed-a74d-c6fbd5a26116",
+		Title:       "High Value Indicator Collection",
+		Description: "This data collection contains high value IOCs",
+		Can_read:    true,
+		Can_write:   false,
+		Media_types: []string{
+			"application/stix+json;version=2.1",
+		},
+	}
+
+status := map[string]interface{}{
+		"id":                "2d086da7-4bdc-4f91-900e-d77486753710",
+		"status":            "pending",
+		"request_timestamp": "2016-11-02T12:34:34.12345Z",
+		"total_count":       4,
+		"success_count":     1,
+		"successes": models.StatusDetails{
+			ID:      "indicator--c410e480-e42b-47d1-9476-85307c12bcbf",
+			Version: "2018-05-27T12:02:41.312Z",
+		},
+		"failure_count": 1,
+		"failures": models.StatusDetails{
+			ID:      "malware--664fa29d-bf65-4f28-a667-bdb76f29ec98",
+			Version: "2018-05-28T14:03:42.543Z",
+			Message: "Unable to process object",
+		},
+		"pending_count": 2,
+		"pendings": []models.StatusDetails{
+			{
+				ID:      "indicator--252c7c11-daf2-42bd-843b-be65edca9f61",
+				Version: "2018-05-18T20:16:21.148Z",
+			},
+			{
+				ID:      "relationship--045585ad-a22f-4333-af33-bfd503a683b5",
+				Version: "2018-05-15T10:13:32.579Z",
+			},
+		},
+	}
+
+apiRoot := map[string]interface{}{
+		"title":              "Malware Research Group",
+		"description":        "A trust group setup for malware researchers",
+		"versions":           []string{"application/taxii+json;version=2.1"},
+		"max_content_length": 104857600,
+	}
+
+discovery := map[string]interface{}{
+		"title":       "Some TAXII Server",
+		"description": "This TAXII Server contains a listing of...",
+		"contact":     "florin.stefan@domain.com",
+		"default":     "http://example.com/api2/",
+		"api_roots": []string{
+			"http://example.com/api1/",
+			"http://example.com/api2/",
+			"http://example.com/trustgroup1/",
+		},
+	}
