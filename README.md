@@ -1,5 +1,7 @@
 # ThreatXchangeGo
 
+**Disclaimer: This Repository is Work In Progress**
+
 ThreatXchangeGo is a Go implementation of the TAXII (Trusted Automated eXchange of Indicator Information) protocol for secure and standardized exchange of cyber threat intelligence. This application is designed to provide an easy-to-use, scalable, and extensible solution for organizations looking to enhance their cybersecurity posture through threat intelligence sharing.
 
 ## Features
